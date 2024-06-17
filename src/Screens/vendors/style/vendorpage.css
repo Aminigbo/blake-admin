@@ -1,0 +1,87 @@
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .profile-details {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .profile-image {
+    margin-right: 20px;
+    text-align: center;
+  }
+  
+  .profile-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .profile-image input {
+    display: block;
+    margin-top: 10px;
+    margin-left: 40px;
+  }
+  
+  .employee-details {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input-group {
+    margin-bottom: 10px;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .input-group input {
+    width: 250px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .onboarding-status {
+    margin-top: 20px;
+  }
+  
+  .onboarding-status h2 {
+    margin-bottom: 10px;
+  }
+  
+  .onboarding-tasks {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .onboarding-task {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  
+  .onboarding-task label {
+    margin-right: 10px;
+    width: 200px;
+  }
+
+  .button{
+    border: none;
+    background-color: #FEB800;
+    font-size:19px;
+    font-weight: 500;
+    width: 100%;
+    border-radius: 6px;
+    height: 45px;
+    cursor: pointer;
+    margin-top: 20px;
+    color:white
+  }

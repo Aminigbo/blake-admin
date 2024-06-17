@@ -1,0 +1,905 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Inconsolata:wght@200..900&family=Karla:ital,wght@0,200..800;1,200..800&family=M+PLUS+1+Code:wght@100..700&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tac+One&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
+
+.s-f{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.signin{
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.signin .signin-l{
+  width: 60%;
+}
+
+.signin .signin-l img{
+  width: 100%;
+}
+
+.signin .signin-r{
+  width: 35%;
+  text-align: center;
+}
+
+.signin .signin-r img{
+  width: 42%;
+  object-fit: contain;
+  margin-bottom: 25px;
+}
+
+.signin .signin-r h3{
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28.13px;
+  margin-bottom: 40px;
+}
+
+.signin .signin-r .sign{
+  width: 100%;
+}
+
+.signin .signin-r .sign label{
+  width: 96%;
+  background-color: #F6F6F6;
+  height: 50px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  padding:0 2%;
+} 
+
+
+
+.signin .signin-r .sign label input{
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.signin .signin-r .sign .pass{
+  margin-bottom: 10px;
+}
+.signin .signin-r .sign .pass input{
+  width: 90%;
+}
+
+.signin .signin-r .sign .rem{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.signin .signin-r .sign .rem span{
+  color: #999999;
+  font-size: 14px;
+}
+
+.signin .signin-r .sign .rem span input{
+  margin-right: 10px;
+}
+
+.signin .signin-r .sign .rem .forgot{
+  color: #FEB800;
+}
+
+.signin .signin-r .sign button{
+  border: none;
+  background-color: #FEB800;
+  font-size:19px;
+  font-weight: 500;
+  width: 100%;
+  border-radius: 10px;
+  height: 50px;
+  cursor: pointer;
+}
+
+
+
+/* Dashboard */
+.dashboard{
+  width: 100%;
+  display: flex;
+  align-items: start;
+}
+
+.dashboard main{
+  width: 90%;
+  padding: 30px 0;
+}
+
+/* Header */
+.header{
+  width: 93%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .h-l{
+  width: 35%;
+  background-color: #F6F6F6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2%;
+  border-radius: 10px;
+  height: 45px;
+}
+.header .h-l input{
+  background-color: transparent;
+  height: 100%;
+  width: 85%;
+  border: none;
+  outline: none;
+}
+
+.header .h-l .s-i{
+  font-size: 19px;
+  color: #f6b50f;
+}
+
+.header .h-r{
+  display: flex;
+  align-items: center;
+}
+
+.header .h-r .notify{
+  font-size: 20px;
+  color: #FEB800;
+  margin-right: 17px;
+}
+
+.header .h-r img{
+  width: 38px;
+  height: 38px;
+  border-radius: 38px;
+  margin-right: 18px;
+}
+
+.header .h-r h4{
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.header .h-r p{
+  font-size: 14px;
+}
+
+/* dashboard */
+
+.side{
+  background-color: #F6F6F6;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* box-shadow: 4px 4px 10px rgba(69, 65, 78, 0.06); */
+  gap: 60px;
+
+}
+
+.sidebar{
+  height: 100%;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #F6F6F6;
+
+}
+
+.logo-div{
+  width: 95%;
+  margin: auto;
+}
+
+.logo-div img{
+  width: 75%;
+  cursor: pointer;
+}
+
+.side .link{
+  width: 100%;
+  color: #8d9498;
+  text-decoration: none;
+}
+.side .name{  
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+ .accts.active{
+  display: block;
+  font-size: 15px;
+  margin-top: 10px;
+  background-color: transparent;
+  color: #FEB800;
+}
+.accts.inactive{
+  display: none;
+}
+
+.side .name .icons{
+  font-size: 10px;
+  padding-top: 7px;
+}
+.side .name .icon-a{
+  margin-top: 7px;
+}
+.side div{
+  width: 85%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  transition: all .5s ease-in;
+  margin-top: 40px;
+}
+
+.side .one{
+  align-items: center;
+}
+
+.side .one .icon{
+  margin-top: 5px;
+}
+
+.side .name div{
+  margin-top: 0;
+}
+
+
+.side div .active{
+  color: #FEB800;
+  border-radius: 10px;
+}
+.side section{
+  padding: 0;
+  margin: 0;
+}
+.side div h4{
+  width: 85%;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 9px;
+  margin-left: 10px;
+}
+.side div h3{
+  font-weight: 500;
+}
+.side div .icon{
+  font-size: 21px;
+}
+.side .actives{
+  color: #FEB800;
+  border-radius: 10px;
+}
+.side .active{
+  
+  border-radius: 10px;
+  color: #FEB800;
+}
+
+.side .bar{
+  margin: 0;
+  width: 100%;
+  display: flex;
+  height: 80px;
+  align-items: center;
+}
+.side .bar .icon{
+  margin: auto;  
+  color: #FEB800;
+  font-size: 23px;
+}
+
+.side2{
+  display: none;
+}
+.media-bar{
+  display: none;
+}
+
+.side .logout{
+  /* background-color: #fff; */
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.side .logout .one{
+  background-color: #fff;
+  width: fit-content;
+  margin: 0;
+  padding:10px;
+  border-radius: 9px;
+}
+
+.side .logout .one .icon{
+  margin-top: 0;
+}
+
+.side .logout .one h4{
+  margin-top: 0;
+}
+
+
+/* SIDEBAR ENDS HERE */
+
+
+/* Dashboard Homepage */
+
+.home{
+  margin-top: 50px;
+  width: 93%;
+  margin: auto;
+  background-color: #F6F6F6;
+  padding: 30px 0;
+  margin-top: 60px;
+  border-radius: 10px;
+  overflow-y: scroll;
+}
+
+.home .home-c{
+  width: 95%;
+  margin: auto;
+}
+
+.home .home-c h2{
+  font-size: 23px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.home .home-c h2 .arr{
+  font-size: 16px;
+}
+
+.home .home-c h2 span{
+  color: #999999;
+  font-size: 20px;
+}
+
+.home .home-c .cards{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.home .home-c .cards .card{
+  width: 32%;
+  background-color: #fff;
+  padding: 20px 0;
+  border-radius: 10px;
+}
+
+.home .home-c .cards .card div{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home .home-c .cards .card .first{
+  margin-bottom: 20px;
+}
+
+.home .home-c .cards .card div span{
+  font-size: 16px;
+}
+
+.home .home-c .cards .card div select{
+  border: none;
+}
+
+.home .home-c .cards .card div h5{
+  font-size: 31px;
+}
+
+.home .home-c .cards .card div a{
+  font-size: 13px;
+  color: #f6b50f;
+}
+
+.home .home-c .graph{
+  background-color: #fff;
+  padding: 20px 0;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+
+/* table */
+.home .home-c table{
+  width: 100%;
+}
+
+.home .home-c table tr{
+  width: 96%;
+  margin: auto;
+  background-color:#F0F0F0;
+  border-collapse: collapse;
+  padding:1.5% 2%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.home .home-c table .heading{
+  background-color: #FEB800;
+}
+
+.home .home-c table .heading th{
+  font-size: 16px;
+}
+
+.home .home-c table tr .sn{
+  width: 3%;
+}
+
+.home .home-c table tr th{
+  width: 15%;
+  text-align: center;
+}
+
+.home .home-c table tr td{
+  width: 15%;
+  text-align: center;
+  font-size: 14px;
+}
+
+.home .home-c table tr td select{
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+
+/* Modal */
+
+.home .home-c .create{
+  width: 100%;
+  text-align: center;
+  margin-top: 40px;
+}
+.home .home-c .create button{
+  background-color: #f6b50f;
+  font-size: 14px;
+  padding:15px;
+  border-radius: 10px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.modal1{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal1 .modal1-content{
+  background-color: #fff;
+  height: auto;
+  padding: 22px 0;
+  width: 35%;
+  border-radius: 6px;
+  
+}
+
+.modal1 .modal1-content .close{
+  width: 97%;
+  display: flex;
+  justify-content: end;
+}
+
+.modal1 .modal1-content .close button{
+  background-color: transparent;
+  color: #000;
+  margin-top: 10px;
+  padding: 3px 5px;
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+
+}
+
+.modal1 .modal1-content h2{
+  text-align: center;
+  margin:15px 0 30px 0;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.modal1 .modal1-content .form{
+  width: 75%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal1 .modal1-content .form input{
+  width: 100%;
+  margin-bottom: 15px;
+  background-color: #F6F6F6;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  padding-left: 15px;
+}
+
+.modal1 .modal1-content .form button{
+  background-color: #f6b50f;
+  height: 50px;
+  padding:10px 15px;
+  border: none;
+  border-radius: 10px;
+  font-size: 13.5px;
+  font-weight: 600;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.modal1 .modal1-content .congrat{
+  width: 75%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal1 .modal1-content .congrat img{
+  width: 40%;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.modal1 .modal1-content .congrat h4{
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.modal1 .modal1-content .congrat button{
+  border: none;
+  background-color: #f6b50f;
+  border-radius: 10px;
+  padding: 10px 17px;
+  font-size: 14px;
+}
+
+
+/* ACTIVITY LOG */
+
+.activity h2{
+  justify-content: center;
+}
+
+.home .activity section{
+  width: 100%;
+  padding: 30px 0;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.home .activity section .details{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 35px;
+  font-weight: 600;
+}
+
+.home .activity section .details label{
+  font-size: 16px;
+  width: 40%;
+  display: flex;
+  align-items: center;
+}
+
+.home .activity section .details label span{
+  margin-left: 8px;
+  background-color: #F2F2F2;
+  width: 60%;
+  padding: 10px 0 10px 10px;
+  border-radius: 3px;
+}
+
+.home .activity section .details select{
+  border: none;
+  outline: none;
+}
+
+.home .activity section .sos{
+  display: flex;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+.home .activity section .sos .a-i{
+  color: #999999;
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+.home .activity section .sos span{
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.home .activity section .num{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home .activity section .num p{
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.home .activity section .num p span{
+  margin-left: 7px;
+}
+
+.home .activity section .num .count{
+  color: #999999;
+  font-size: 15px;
+}
+
+.act{
+  width: 100%;
+  background-color: #fff;
+}
+
+
+@media screen and (max-width:900px){
+  .signin .signin-l{
+    width: 45%;
+  }
+  .signin .signin-r{
+    width: 50%;
+  }
+}
+
+@media screen and (max-width:850px){
+  .side{
+  height: auto;
+  display: none;
+}
+
+.side .bar{
+  height: unset;
+}
+
+.side2.active{
+  position: absolute;
+  height: 100vh;
+  display: flex;
+  z-index: 10;
+}
+.side2.inactive{
+  display: none;
+}
+
+.accts.inactive{
+  display: none;
+}
+.side .closes{
+  justify-content: left;
+  margin-bottom: 10px;
+  margin-top: 0;
+  width: 100%;
+}
+
+
+
+.side2 .bar .icon{
+  margin: auto;  
+  color: #fff;
+  font-size: 23px;
+}
+.media-bar{
+  position: absolute;
+  top: 40px;
+  left: 10px;
+  z-index: 1;
+  color: #000;
+  font-size: 16px;
+  display: block;
+}
+
+.dashboard main{
+  width: 98%;
+  margin-left: auto;
+}
+
+.home .activity section .details label span{
+  width: fit-content;
+  padding-right: 15px;
+}
+
+.modal1 .modal1-content{
+  width: 50%;
+}
+
+
+}
+
+@media screen and (max-width:750px) {
+   .home .home-c{
+   width: 100%;
+    /* overflow-x: auto; */
+    max-width: 100%; 
+    padding: 10px 0;
+   }
+
+   .home .home-c table{
+    border-collapse: collapse;
+    border: none;
+    
+   }
+ .home .home-c table tr{
+    border-collapse: collapse;
+    width: 95%;
+    margin: auto;
+   }
+   
+  .home .home-c .table{
+    width: 100%;
+    max-width: 100%;
+  }
+
+   .home .home-c table{
+    border-collapse: collapse;
+    width: 750px;
+  }
+}
+
+@media screen and (max-width:700px){
+
+  .signin{
+    flex-direction: column;
+    height: auto;
+    padding: 30px 0;
+  }
+
+  .signin .signin-l{
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .signin .signin-l img{
+    height: 40vh;
+    object-fit: contain;
+  }
+  .signin .signin-r{
+    width: 100%;
+  }
+
+  .home .home-c .cards{
+    flex-wrap: wrap;
+  }
+
+  .home .home-c .cards .card{
+    width: 45%;
+    margin-bottom: 15px;
+  }
+
+  .home .home-c h2{
+    font-size: 19px;
+  }
+
+  .home .home-c .cards .card div h5{
+    font-size: 22px;
+  }
+
+
+}
+
+@media screen and (max-width:600px){
+  .signin .signin-r h3{
+    font-size: 20px;
+  }
+  .dashboard main{
+    margin: auto;
+  }
+  .header{
+    flex-direction: column-reverse;
+    align-items: end;
+    margin: auto;
+  }
+  .header .h-l{
+    margin-top: 15px;
+    width: 98%;
+  }
+  .home{
+    width: 96%;
+  }
+
+  .home .activity section .details{
+    width: 96%;
+  }
+
+  .home .activity section .sos{
+    width: 96%;
+  }
+
+  .home .activity section .num{
+    width: 96%;
+  }
+
+
+}
+
+@media screen and (max-width:550px){
+   .home .activity section .details{
+    flex-wrap: wrap;
+  }
+  .home .activity section .details label{
+    width: 46%;
+    margin-bottom: 20px;
+  }
+  .home .activity section .num{
+    flex-wrap: wrap;
+  }
+  .home .activity section .num p{
+    margin-bottom: 10px;
+  }
+    .modal1 .modal1-content{
+    width: 70%;
+  }
+
+}
+
+@media screen and (max-width:500px){
+  .home .home-c .cards .card{
+      width: 100%;
+    }
+    .home .activity section .details label{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:400px){
+  .modal1 .modal1-content{
+    width: 90%;
+  }
+}
